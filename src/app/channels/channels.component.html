@@ -1,0 +1,406 @@
+<div class="padding-content">
+  <h1 class="mdc-typography--headline6">Channels</h1>
+  <top-tab></top-tab>
+  <div class="mdc-layout-grid"
+    style="border-bottom: 1px solid gray; border-top: 2px solid gray; padding-bottom: 50px; padding-top: 50px;">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell">
+        <h4 class="mdc-typography--subtitle1">Party ID</h4>
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="background-color: #f5f5f5">
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Name</label>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">*</div>
+        </div>
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="margin-top: 10px; background-color: #f5f5f5">
+          <input class="mdc-text-field__input" id="text-field-hero-input2">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Phone Number</label>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">+38733563000</div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell" style="margin-left: 5%; ">
+        <div class="mdc-select">
+          <i class="mdc-select__dropdown-icon"></i>
+          <select class="mdc-select__native-control">
+            <option value="" disabled selected></option>
+            <option value="person">
+              Person
+            </option>
+            <option value="organization">
+              Organization
+            </option>
+          </select>
+          <label class="mdc-floating-label">Party Role</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="margin-top: 11px; background-color: #f5f5f5">
+          <input class="mdc-text-field__input" id="text-field-hero-input2">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Lastname</label>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">*</div>
+        </div>
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="margin-top: 11px; background-color: #f5f5f5">
+          <input class="mdc-text-field__input" id="text-field-hero-input2">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Label</label>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">local-part@domain</div>
+        </div>
+      </div>
+
+      <div class="mdc-layout-grid__cell" style="margin-left: 10%;">
+        <h1 class="mdc-typography--body1" style="margin-top: 1px">123456XXXXXX</h1>
+        <h1 class="mdc-typography--body1">Personal ID Number</h1>
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell">
+              <div class="mdc-select" style="margin-top: -23px; margin-left: -22px;">
+                <i class="mdc-select__dropdown-icon"></i>
+                <select class="mdc-select__native-control">
+                  <option value="" disabled selected></option>
+                  <option value="male">
+                    Male
+                  </option>
+                  <option value="female">
+                    Female
+                  </option>
+                  <option value="pther">
+                    Other
+                  </option>
+                </select>
+                <label class="mdc-floating-label">Gender</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell">
+              <mat-form-field style="margin-top: -12px">
+                <input matInput [matDatepicker]="picker" placeholder="DOB">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-select" style="margin-top: -15px;">
+          <i class="mdc-select__dropdown-icon"></i>
+          <select class="mdc-select__native-control">
+            <option value="" disabled selected></option>
+            <option value="saglasnost">
+              Za verifikaciju saglasnosti
+            </option>
+            <option value="tekuci">
+              Povezani tekuci racun
+            </option>
+            <option value="aplicirao">
+              Aplicirao za racun
+            </option>
+            <option value="otvoren">
+              Tekuci racun otvoren
+            </option>
+          </select>
+          <label class="mdc-floating-label">Prijavljeni tekuci racun</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-layout-grid" style="border-bottom: 1px solid gray; padding-bottom: 50px;">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell">
+        <h1 class="mdc-typography--body1" style="margin-top: 1px; color :rgb(125,0,240); font-weight: bold;">Profile
+        </h1>
+        <ul class="mdc-list mdc-list--two-line">
+          <li class="mdc-list-item" tabindex="0">
+            <span class="mdc-list-item__text">
+              <span class="mdc-list-item__primary-text">Extended Registration</span>
+              <span class="mdc-list-item__secondary-text">01.01.2001</span>
+            </span>
+            <span class="material-icons mdc-list-item__meta" aria-hidden="true">person</span>
+          </li>
+          <li role="separator" class="mdc-list-divider"></li>
+          <li class="mdc-list-item">
+            <span class="mdc-list-item__text">
+              <span class="mdc-list-item__primary-text">Basic Registration</span>
+              <span class="mdc-list-item__secondary-text">02.02.2002</span>
+            </span>
+            <span class="material-icons mdc-list-item__meta" aria-hidden="true">person_outline</span>
+          </li>
+          <li role="separator" class="mdc-list-divider"></li>
+          <li class="mdc-list-item">
+            <span class="mdc-list-item__label">
+              <span class="mdc-list-item__primary-text">2FA SMS-Based Verification</span>
+              <span class="mdc-list-item__secondary-text">03.03.2003</span>
+            </span>
+            <span class="material-icons mdc-list-item__meta" aria-hidden="true">phonelink_setup</span>
+          </li>
+          <li role="separator" class="mdc-list-divider"></li>
+        </ul>
+      </div>
+      <div class="mdc-layout-grid__cell" style="margin-left: 5%;">
+        <ul class="mdc-list" style="margin-top:26.5%;">
+          <li class="mdc-list-item" tabindex="0">
+            <span class="material-icons mdc-list-item__graphic" aria-hidden="true">email</span>
+            <span class="mdc-list-item__text">Application Form Sent?</span>
+            <div class="mdc-switch" style="margin-left: 20%;">
+              <div class="mdc-switch__track"></div>
+              <div class="mdc-switch__thumb-underlay">
+                <div class="mdc-switch__thumb">
+                  <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li role="separator" class="mdc-list-divider"></li>
+          <li class="mdc-list-item" tabindex="0">
+            <span class="material-icons mdc-list-item__graphic" aria-hidden="true">credit_card</span>
+            <span class="mdc-list-item__text">Have a Bank Account?</span>
+            <div class="mdc-switch" style="margin-left: 22%;">
+              <div class="mdc-switch__track"></div>
+              <div class="mdc-switch__thumb-underlay">
+                <div class="mdc-switch__thumb">
+                  <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li role="separator" class="mdc-list-divider"></li>
+          <li class="mdc-list-item" tabindex="0">
+            <span class="material-icons mdc-list-item__graphic" aria-hidden="true">alternate_email</span>
+            <span class="mdc-list-item__text">Email Verified?</span>
+            <div class="mdc-switch" style="margin-left: 39%;">
+              <div class="mdc-switch__track"></div>
+              <div class="mdc-switch__thumb-underlay">
+                <div class="mdc-switch__thumb">
+                  <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li role="separator" class="mdc-list-divider"></li>
+        </ul>
+      </div>
+      <div class="mdc-layout-grid__cell" style="margin-top: 55%; margin-left: 10%;">
+        <button class="mdc-button mdc-button--raised">
+          <i class="material-icons mdc-button__icon" aria-hidden="true">email</i>
+          Send ACCOUNT APPL. FORM</button>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-layout-grid"
+    style="border-bottom: 1px solid gray; padding-bottom: 40px; background-color: #F5F5F5; margin-top: 2%;">
+    <h1 class="mdc-typography--body1" style="margin-top: 1px; color: rgb(125,0,240); font-weight: bold;">Bank Accounts
+    </h1>
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell">
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="background-color:#E2E3E4 ">
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Current Account</label>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">161 XXXXXX AAAA</div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell">
+        <div class="mdc-text-field mdc-text-field--fullwidth">
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Bank Office</label>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell">
+        <li class="mdc-list-item" tabindex="0">
+          <span class="material-icons mdc-list-item__graphic" aria-hidden="true">local_atm</span>
+          <span class="mdc-list-item__text">Payment Transaction Authorized?</span>
+          <div class="mdc-switch" style="margin-left: 2%;">
+            <div class="mdc-switch__track"></div>
+            <div class="mdc-switch__thumb-underlay">
+              <div class="mdc-switch__thumb">
+                <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+    </div>
+    <div class="mdc-layout-grid__inner" style="margin-top: 2%;">
+      <div class="mdc-layout-grid__cell">
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker2" placeholder="Consent Date">
+          <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+          <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="mdc-layout-grid__cell">
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker3" placeholder="Withdrawal of Consent Date">
+          <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+          <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <h1 class="mdc-typography--headline6" style="margin-top: 5%;">Extended Registration</h1>
+  <div class="mdc-layout-grid"
+    style="border-bottom: 1px solid gray; padding-bottom: 40px; background-color: #F5F5F5; margin-top: 2%;">
+    <h1 class="mdc-typography--body1" style="margin-top: 1px; color: rgb(125,0,240); font-weight: bold;">Permanent
+      Residence</h1>
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="background-color:#E2E3E4 ">
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Street Name</label>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+        <div class="mdc-text-field" style="background-color:#E2E3E4 ">
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Postal Code</label>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+        <div class="mdc-text-field mdc-text-field--fullwidth">
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">City</label>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop" style="margin-top: 10px;">
+        <div class="mdc-form-field">
+          <div class="mdc-checkbox">
+            <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-1" />
+            <div class="mdc-checkbox__background">
+              <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+          </div>
+          <label for="checkbox-1">Same as temporary address</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-trailing-icon" style="margin-top: 5%;">
+    <i class="material-icons mdc-text-field__icon">work</i>
+    <input class="mdc-text-field__input" id="text-field-hero-input">
+    <div class="mdc-notched-outline">
+      <div class="mdc-notched-outline__leading"></div>
+      <div class="mdc-notched-outline__notch">
+        <label for="text-field-hero-input" class="mdc-floating-label">Employment Info</label>
+      </div>
+      <div class="mdc-notched-outline__trailing"></div>
+    </div>
+  </div>
+  <div class="mdc-layout-grid" style="border-bottom: 1px solid gray; padding-bottom: 40px;  margin-top: 2%;">
+    <h1 class="mdc-typography--body1" style="margin-top: 1px; color: rgb(125,0,240); font-weight: bold;">Documents</h1>
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+        <div class="mdc-card demo-card">
+          <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+            <div class="mdc-card__media mdc-card__media--16-9 demo-card__media"
+              style="background-image: url(&quot;https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg&quot;);">
+            </div>
+            <div class="demo-card__primary">
+              <h2 class="demo-card__title mdc-typography mdc-typography--headline6" style="margin-left: 15px;">ID Card A
+                Side</h2>
+            </div>
+            <div class="demo-card__secondary mdc-typography mdc-typography--body2" style="margin-left: 15px;">9.7.2019
+              15:42</div>
+          </div>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-icons">
+              <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
+                title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+        <div class="mdc-card demo-card">
+          <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+            <div class="mdc-card__media mdc-card__media--16-9 demo-card__media"
+              style="background-image: url(&quot;https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg&quot;);">
+            </div>
+            <div class="demo-card__primary">
+              <h2 class="demo-card__title mdc-typography mdc-typography--headline6" style="margin-left: 15px;">ID Card A
+                Side</h2>
+            </div>
+            <div class="demo-card__secondary mdc-typography mdc-typography--body2" style="margin-left: 15px;">9.7.2019
+              15:42</div>
+          </div>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-icons">
+              <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
+                title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+        <div class="mdc-card demo-card">
+          <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+            <div class="mdc-card__media mdc-card__media--16-9 demo-card__media"
+              style="background-image: url(&quot;https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg&quot;);">
+            </div>
+            <div class="demo-card__primary">
+              <h2 class="demo-card__title mdc-typography mdc-typography--headline6" style="margin-left: 15px;">ID Card A
+                Side</h2>
+            </div>
+            <div class="demo-card__secondary mdc-typography mdc-typography--body2" style="margin-left: 15px;">9.7.2019
+              15:42</div>
+          </div>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-icons">
+              <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
+                title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+        <div class="mdc-card demo-card">
+          <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+            <div class="mdc-card__media mdc-card__media--16-9 demo-card__media"
+              style="background-image: url(&quot;https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg&quot;);">
+            </div>
+            <div class="demo-card__primary">
+              <h2 class="demo-card__title mdc-typography mdc-typography--headline6" style="margin-left: 15px;">ID Card A
+                Side</h2>
+            </div>
+            <div class="demo-card__secondary mdc-typography mdc-typography--body2" style="margin-left: 15px;">9.7.2019
+              15:42</div>
+          </div>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-icons">
+              <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded"
+                title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div style="padding-bottom: 40px;">
+    <button class="mdc-button" style="margin-top: 2%; background-color: #00E2C8; color: black;">
+      <i class="material-icons mdc-button__icon" aria-hidden="true">save</i>
+      <span class="mdc-button__label">Apply</span>
+    </button>
+    <button class="mdc-button" style="margin-top: 2%; background-color: #E3E4E6; color: black; margin-left: 20px;">
+      <i class="material-icons mdc-button__icon" aria-hidden="true">clear</i>
+      <span class="mdc-button__label">Delete</span>
+    </button>
+  </div>
+</div>

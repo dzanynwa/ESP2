@@ -1,0 +1,226 @@
+<!-- <mat-sidenav-container>
+  <mat-sidenav mode="side" position="end" [(opened)]="opened">End</mat-sidenav>
+  <mat-sidenav-content>
+    Content
+    <button (click)="opened =! opened">Toggle</button>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+<div class="padding-content">
+  <h1 class="mdc-typography--headline6">Channels</h1>
+  <div class="mdc-tab-bar2" role="tablist">
+    <div class="mdc-tab-scroller">
+      <div class="mdc-tab-scroller__scroll-area">
+        <div class="mdc-tab-scroller__scroll-content">
+          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__text-label">Basic</span>
+            </span>
+            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
+          <button class="mdc-tab mdc-tab" role="tab" aria-selected="false" tabindex="1">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__text-label">POS System</span>
+            </span>
+            <span class="mdc-tab-indicator mdc-tab-indicator">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-layout-grid" style="border-top: 2px solid gray; padding-top: 50px;">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+        <h4 class="mdc-typography--subtitle1">XXX-YYY-ABC</h4>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop"
+        style="text-align: right;background-color: white;">
+        <div class="mdc-select">
+          <i class="mdc-select__dropdown-icon"></i>
+          <select class="mdc-select__native-control">
+            <option value="" disabled selected></option>
+            <option value="active">
+              Active
+            </option>
+            <option value="disabled">
+              Disabled
+            </option>
+          </select>
+          <label class="mdc-floating-label">Status</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-layout-grid" style="padding-bottom: 50px; margin-top: -50px;">
+    <h4 class="mdc-typography--subtitle1">No.Series</h4>
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell " style="width: 400px">
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="background-color: #f5f5f5">
+          <input class="mdc-text-field__input" id="text-field-hero-input" required>
+          <label for="text-field-hero-input" class="mdc-floating-label">Retail Channel Name</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">*</div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell " style="text-align: center">
+        <div class="mdc-select">
+          <i class="mdc-select__dropdown-icon"></i>
+          <select class="mdc-select__native-control">
+            <option value="" disabled selected></option>
+            <option value="rStore">
+              Retail Store
+            </option>
+            <option value="oStore">
+              Online Store
+            </option>
+          </select>
+          <label class="mdc-floating-label">Channel Type</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell" style="width: 350px">
+        <div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--fullwidth">
+          <i class="material-icons mdc-text-field__icon">search</i>
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Merchant</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-layout-grid" style="padding-bottom: 50px; padding-top: 20px;">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell " style="width: 400px">
+        <span class="flag-icon flag-icon-ba"></span>
+        <div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--fullwidth"
+          style="background-color: #f5f5f5">
+          <i class="material-icons mdc-text-field__icon">phone</i>
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Phone</label>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">+38733563000</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-layout-grid" style="border-bottom: 1px solid gray; padding-bottom: 50px; padding-top: 20px;">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell " style="width: 400px">
+        <div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--fullwidth">
+          <i class="material-icons mdc-text-field__icon">search</i>
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Merchant Category Code</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-layout-grid" style=" padding-top: 50px;">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+        <div class="mdc-form-field">
+          <div class="mdc-checkbox">
+            <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-1" />
+            <div class="mdc-checkbox__background">
+              <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+          </div>
+          <label for="checkbox-1">The transaction is the same as for the Head Office?</label>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="background-color: #f5f5f5">
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Transaction Account</label>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">BB YYYYY AAAAAAA KK</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-layout-grid"
+    style="border-bottom: 1px solid gray; padding-bottom: 40px; background-color: #F5F5F5; margin-top: 2%;">
+    <h1 class="mdc-typography--body1" style="margin-top: 1px; color: rgb(125,0,240); font-weight: bold;">Bank Accounts
+    </h1>
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="background-color:#E2E3E4">
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Transaction Account</label>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">161 AAAAAAA KK</div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="background-color:#E2E3E4">
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Sub-account</label>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">161 AAAAAAA KK</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-layout-grid"
+    style="border-bottom: 1px solid gray; padding-bottom: 40px; background-color: #F5F5F5; margin-top: 2%;">
+    <h1 class="mdc-typography--body1" style="margin-top: 1px; color: rgb(125,0,240); font-weight: bold;">Address
+    </h1>
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell">
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="background-color:#E2E3E4 ">
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Street Name</label>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell">
+        <div class="mdc-text-field mdc-text-field--fullwidth" style="background-color:#E2E3E4 ">
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Postal Code</label>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell">
+        <div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--fullwidth">
+          <i class="material-icons mdc-text-field__icon">search</i>
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">City</label>
+        </div>
+      </div>
+    </div>
+    <button class="mdc-button mdc-button--outlined" style="margin-top: 2%">
+      <i class="material-icons mdc-button__icon" aria-hidden="true">place</i>
+      <span class="mdc-button__label">Map</span>
+    </button>
+  </div>
+  <div style="padding-bottom: 40px;">
+    <button class="mdc-button" style="margin-top: 2%; background-color: #00E2C8; color: black;">
+      <i class="material-icons mdc-button__icon" aria-hidden="true">save</i>
+      <span class="mdc-button__label">Apply</span>
+    </button>
+    <button class="mdc-button" style="margin-top: 2%; background-color: #E3E4E6; color: black; margin-left: 20px;">
+      <i class="material-icons mdc-button__icon" aria-hidden="true">clear</i>
+      <span class="mdc-button__label">Delete</span>
+    </button>
+  </div>
+</div>

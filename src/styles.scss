@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*
+Drawers - Usage with Top App Bar - Dismissible Drawer Below Top App Bar
+https://material.io/develop/web/components/drawers/
+*/
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+body {
+    display: flex;
+    height: 200vh;
+    margin: 0
+}
+$mdc-theme-primary: rgb(125,0,240);
+$mdc-theme-secondary: rgb(0,138,102);
+.mdc-drawer-app-content {
+    flex: auto;
+    overflow: auto;
+    position: relative
+}
+
+.main-content {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.app-bar {
+    position: absolute
+}
+
+// only apply this style if below top app bar
+.mdc-top-app-bar {
+    z-index: 7
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.my-card-content {
+    padding: 16px;
+  }
+  .my-card {
+    height: 350px;
+    width: 350px;
+  }

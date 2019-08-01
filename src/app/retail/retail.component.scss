@@ -1,0 +1,38 @@
+@import "@material/typography/mdc-typography";
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/textfield/mdc-text-field";
+@import "@material/select/mdc-select";
+@import "@material/list/mdc-list";
+@import "@material/switch/mdc-switch";
+@import "@material/form-field/mdc-form-field";
+@import "@material/checkbox/mdc-checkbox";
+@import "@material/button/mdc-button";
+@import "@material/card/mdc-card";
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/textfield/mdc-text-field";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
+@import "@material/textfield/helper-text/mdc-text-field-helper-text";
+
+.padding-content{
+    padding: 5px 20px;
+}
+
+
+mat-sidenav-container {
+    height: 100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+mat-sidenav, mat-sidenav-content{
+    padding: 16px;
+}
+mat-sidenav{
+    background-color: gray;
+    width: 250px;
+}
+  
