@@ -10,12 +10,16 @@ import {MDCDrawer} from "@material/drawer";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  title = 'ESP';
+
   constructor() { }
 
   // implement OnInit's `ngOnInit` method
   ngOnInit() {
-    const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+    // The JavaScript to toggle the drawer when the navigation button is clicked
     const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+    const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+    
     topAppBar.setScrollTarget(document.getElementById('main-content'));
     topAppBar.listen('MDCTopAppBar:nav', () => {
       drawer.open = !drawer.open;

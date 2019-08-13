@@ -9,6 +9,13 @@
 @import "@material/button/mdc-button";
 @import "@material/card/mdc-card";
 @import "@material/textfield/helper-text/mdc-text-field-helper-text";
+@import "@material/top-app-bar/mdc-top-app-bar";
+/*
+Drawers - Installation - Styles
+https://material.io/develop/web/components/drawers/
+*/
+@import "@material/drawer/mdc-drawer";
+@import "@material/textfield/mdc-text-field";
 
 .padding-content{
     padding: 5px 20px;
@@ -19,4 +26,28 @@
   .my-card {
     height: 350px;
     width: 350px;
+  }
+  body {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .mdc-drawer-app-content {
+    flex: auto;
+    overflow: auto;
+    position: relative;
+  }
+  
+  .main-content {
+    overflow: auto;
+    height: 100%;
+  }
+  
+  .app-bar {
+    position: absolute;
+  }
+  
+  // only apply this style if below top app bar
+  .mdc-top-app-bar {
+    z-index: 7;
   }

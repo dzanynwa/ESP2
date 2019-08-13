@@ -7,6 +7,8 @@ import {MDCSwitch} from '@material/switch';
 import {MDCFormField} from '@material/form-field';
 import {MDCCheckbox} from '@material/checkbox';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MDCDrawer } from '@material/drawer';
+import { MDCTopAppBar } from '@material/top-app-bar';
 
 @Component({
   selector: 'channels',
@@ -34,6 +36,13 @@ export class ChannelsComponent implements OnInit {
     const listItemRipples = list.listElements.map((listItemEl) => new MDCRipple(listItemEl));
     select.listen('MDCSelect:change', () => {
       alert(`Selected option at index ${select.selectedIndex} with value "${select.value}"`);
+    });
+    const topAppBar = MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+    const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+    
+    topAppBar.setScrollTarget(document.getElementById('main-content'));
+    topAppBar.listen('MDCTopAppBar:nav', () => {
+      drawer.open = !drawer.open;
     });
   }
 

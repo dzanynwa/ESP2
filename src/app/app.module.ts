@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UpperNavComponent } from './upper-nav/upper-nav.component';
 import { TopTabComponent } from './top-tab/top-tab.component';
 import { ChannelsComponent } from './channels/channels.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -52,20 +51,29 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import { MerchantsComponent } from './merchants/merchants.component';
 import { PosSystemsComponent } from './pos-systems/pos-systems.component';
-
+import { LoginComponent } from './login/login.component';
+import { AngularMaterialModule } from './angular-material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { ToastrModule } from 'ngx-toastr';
+import { AuthInterceptor } from './auth/auth.interceptor';
+import { UserService } from './shared/user.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UpperNavComponent,
     TopTabComponent,
     ChannelsComponent,
     RetailComponent,
     MerchantsComponent,
     PosSystemsComponent,
+    LoginComponent,
   ],
   imports: [
+    FlexLayoutModule,
+    AngularMaterialModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -116,8 +124,19 @@ import { PosSystemsComponent } from './pos-systems/pos-systems.component';
     MatTreeModule,
     PortalModule,
     ScrollingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      progressBar: true
+    }),
+    FormsModule
   ],
-  providers: [MatDatepickerModule],
+  providers: [MatDatepickerModule,UserService, {
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
