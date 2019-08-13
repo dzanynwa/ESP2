@@ -1,0 +1,26 @@
+<div>
+  <mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef>ID</mat-header-cell>
+      <mat-cell *matCellDef="let merchants">{{merchants.id}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef>NAME</mat-header-cell>
+      <mat-cell *matCellDef="let merchants">{{merchants.name}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="city">
+      <mat-header-cell *matHeaderCellDef>CITY</mat-header-cell>
+      <mat-cell *matCellDef="let merchants">{{merchants.city}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="address">
+      <mat-header-cell *matHeaderCellDef>ADDRESS</mat-header-cell>
+      <mat-cell *matCellDef="let merchants">{{merchants.address}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="account_number">
+      <mat-header-cell *matHeaderCellDef>ACC.NUM</mat-header-cell>
+      <mat-cell *matCellDef="let merchants">{{merchants.account_number}}</mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+</div>

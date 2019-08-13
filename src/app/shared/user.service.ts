@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
+import {environment} from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 export class UserService {
 
   constructor(private fb: FormBuilder, private http: HttpClient) { }
-  readonly BaseURI = 'http://virtserver.swaggerhub.com/haris.ceco/ZingApiV2/1.0.0';
+  readonly BaseURI = environment.baseURI;
 
   formModel = this.fb.group({
     UserName: ['', Validators.required],
