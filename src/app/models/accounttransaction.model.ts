@@ -1,0 +1,20 @@
+export interface AccountTransaction{
+    id: number,
+    account_id: number,
+    profile_id: number,
+    account_number: string,
+    currency: string, 
+    amount: string,
+    type: string,
+    description: string,
+    party_user_profile_id: number,
+    party_first_name: string,
+    party_last_name: string, 
+    party_phone_number: string,
+    party_email: string,
+    party_account_number: string,
+    pos_terminal_id: number,
+    merchant_unit_id: number,
+    created_at: string,
+    updated_at: string
+}

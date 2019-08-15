@@ -1,0 +1,23 @@
+export interface UserProfile{
+    id: number,
+    status: number,
+    initial_device_registration_id: number,
+    jmbg: string,
+    phone_number: string,
+    email: string, 
+    first_name: string,
+    last_name: string,
+    gender: string,
+    issuer: string,
+    nationality: string,
+    date_of_birth: string,
+    date_of_expiry: string,
+    document_number: string,
+    document_code: string,
+    face_image: string,
+    meta: string,
+    registration_id: number,
+    created_at: string,
+    updated_by: number,
+    updated_at: string
+}

@@ -25,6 +25,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { UserService } from './shared/user.service';
 import { MerchantsTableComponent } from './merchants-table/merchants-table.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { MerchantsTableComponent } from './merchants-table/merchants-table.compo
     PosSystemsComponent,
     LoginComponent,
     MerchantsTableComponent,
+    DashboardComponent,
   ],
   imports: [
     FlexLayoutModule,
