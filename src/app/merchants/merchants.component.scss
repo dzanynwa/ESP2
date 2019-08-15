@@ -21,3 +21,19 @@
 mdc-select{
     width: 200%;
 }
+
+
+::ng-deep .mat-form-field-flex {
+    background: #E2E3E4!important;
+}
+
+::ng-deep .mat-form-field-flex .mat-form-field-label {
+    padding-left: 15px;
+    position: relative;
+    top: 0;
+}
+
+::ng-deep .mat-focused .mat-form-field-flex .mat-form-field-label {
+    position: relative;
+    top: 0.35rem;
+}

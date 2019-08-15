@@ -8,6 +8,7 @@ import { MDCList } from '@material/list';
 import { MDCTabBar } from '@material/tab-bar';
 import {MDCTextField} from '@material/textfield';
 import {MDCTextFieldHelperText} from '@material/textfield/helper-text';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
   selector: 'retail',
