@@ -15,14 +15,16 @@
           <div class="mdc-text-field-helper-line">
             <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">*</div>
           </div>
-          <div class="mdc-text-field mdc-text-field--fullwidth" style="margin-top: 10px; background-color: #f5f5f5">
-            <input class="mdc-text-field__input" id="text-field-hero-input2">
-            <div class="mdc-line-ripple"></div>
-            <label for="text-field-hero-input" class="mdc-floating-label">Phone Number</label>
-          </div>
-          <div class="mdc-text-field-helper-line">
-            <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">+38733563000</div>
-          </div>
+          <div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--fullwidth"
+          style="background-color: #f5f5f5; margin-top: 10px;">
+          <i class="material-icons mdc-text-field__icon">phone</i>
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">Phone</label>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">+38733563000</div>
+        </div>
         </div>
         <div class="mdc-layout-grid__cell" style="margin-left: 5%; ">
           <div class="mdc-select">
@@ -47,14 +49,16 @@
           <div class="mdc-text-field-helper-line">
             <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">*</div>
           </div>
-          <div class="mdc-text-field mdc-text-field--fullwidth" style="margin-top: 11px; background-color: #f5f5f5">
-            <input class="mdc-text-field__input" id="text-field-hero-input2">
-            <div class="mdc-line-ripple"></div>
-            <label for="text-field-hero-input" class="mdc-floating-label">Label</label>
-          </div>
-          <div class="mdc-text-field-helper-line">
-            <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">local-part@domain</div>
-          </div>
+          <div class="mdc-text-field mdc-text-field--with-trailing-icon mdc-text-field--fullwidth"
+          style="background-color: #f5f5f5; margin-top: 10px;">
+          <i class="material-icons mdc-text-field__icon">alternate_email</i>
+          <input class="mdc-text-field__input" id="text-field-hero-input">
+          <div class="mdc-line-ripple"></div>
+          <label for="text-field-hero-input" class="mdc-floating-label">@</label>
+        </div>
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">local-part@domain</div>
+        </div>
         </div>
 
         <div class="mdc-layout-grid__cell" style="margin-left: 10%;">
@@ -195,10 +199,15 @@
         </div>
       </div>
     </div>
+
+    <mat-expansion-panel style="background-color: #F5F5F5; border-bottom: 1px solid grey; box-shadow: none; border-radius: 0; margin-bottom: 25px; margin-top: 35px;">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <label style="color: rgb(125,0,240); font-weight: bold;">Bank Account</label>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
     <div class="mdc-layout-grid"
-      style="border-bottom: 1px solid gray; padding-bottom: 40px; background-color: #F5F5F5; margin-top: 2%;">
-      <h1 class="mdc-typography--body1" style="margin-top: 1px; color: rgb(125,0,240); font-weight: bold;">Bank Accounts
-      </h1>
+      style="padding-bottom: 40px; background-color: #F5F5F5; margin:0; padding: 0;">
       <div class="mdc-layout-grid__inner">
         <div class="mdc-layout-grid__cell">
           <div class="mdc-text-field mdc-text-field--fullwidth" style="background-color:#E2E3E4 ">
@@ -249,9 +258,16 @@
         </div>
       </div>
     </div>
-    <h1 class="mdc-typography--headline6" style="margin-top: 5%;">Extended Registration</h1>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel style="background-color: #F5F5F5; border-bottom: 1px solid grey; box-shadow: none; border-radius: 0; margin-bottom: 25px; margin-top: 35px;">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <label style="color: rgb(125,0,240); font-weight: bold;">Extended Registration</label>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
     <div class="mdc-layout-grid"
-      style="border-bottom: 1px solid gray; padding-bottom: 40px; background-color: #F5F5F5; margin-top: 2%;">
+      style="padding-bottom: 40px; background-color: #F5F5F5; margin:0; padding:0;">
       <h1 class="mdc-typography--body1" style="margin-top: 1px; color: rgb(125,0,240); font-weight: bold;">Permanent
         Residence</h1>
       <div class="mdc-layout-grid__inner">
@@ -292,6 +308,7 @@
         </div>
       </div>
     </div>
+    </mat-expansion-panel>
 
     <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-trailing-icon" style="margin-top: 5%;">
       <i class="material-icons mdc-text-field__icon">work</i>

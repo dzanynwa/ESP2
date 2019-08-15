@@ -1,6 +1,6 @@
 import { ToastrService } from 'ngx-toastr';
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UserService } from '../shared/user.service';
 
@@ -14,6 +14,13 @@ export class LoginComponent implements OnInit {
     UserName: '',
     Password: '',
     OTP: ''
+  }
+  email = new FormControl('', [Validators.required, Validators.email]);
+  hide = true;
+  getErrorMessage() {
+    return this.email.hasError('required') ? 'You must enter a value' :
+        this.email.hasError('email') ? 'Not a valid email' :
+            '';
   }
   constructor(private service: UserService, private router: Router, private toastr: ToastrService) { }
 
