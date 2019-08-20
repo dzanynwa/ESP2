@@ -17,27 +17,42 @@
     </div>
   </div>
 </form> -->
-<div class="mdc-layout-grid">
-  <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-center">
-      <div class="container">
-        <h1 class="mdc-typography--headline6">Channels</h1>
-        <mat-form-field>
-          <input matInput placeholder="Enter your email" [formControl]="email" required>
-          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-        </mat-form-field>
-        <mat-form-field>
-          <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" required>
-          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-            [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-          </button>
-        </mat-form-field>
-        <mat-form-field>
-          <input matInput placeholder="Enter your OTP" required>
-        </mat-form-field>
-        <button mat-stroked-button color="primary" style="width: 300px;">Login</button>
+<div class="mdc-layout-grid" style="padding: 0;">
+  <div class="mdc-layout-grid__inner" style="padding: 0;">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop" style="width: 460px;"></div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop" style="width: 460px;"></div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop" style="width: 460px; padding: 0;"></div>
+  </div>
+</div>
+<div class="mdc-layout-grid" style="padding: 0; background-color: rgb(98,0,238,0.1); height: 100vh;">
+    <div class="mdc-layout-grid__inner" style="padding: 0;">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop" style="padding: 0;">
+          </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop" style="padding: 0;">
+          <div class="container">
+            <mat-card style="padding: 25px;">
+              <mat-card-header>
+                <mat-card-title style="text-align: center;">Login</mat-card-title>
+              </mat-card-header>
+              <mat-form-field  style="display: block;">
+                <input matInput placeholder="Enter your email" [formControl]="email" required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+              <mat-form-field  style="display: block;">
+                <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" required>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                  [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field>
+              <mat-form-field style="display: block;">
+                <input matInput placeholder="Enter your OTP" required>
+              </mat-form-field>
+              <button mat-stroked-button color="primary" style="width: 360px; display: block; margin-top: 6%;">Login</button>
+            </mat-card>
+            </div>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop" style="padding: 0;">
       </div>
     </div>
   </div>
-</div>

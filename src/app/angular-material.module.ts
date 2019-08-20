@@ -16,10 +16,14 @@ import {
    MatDatepickerModule,
    MatNativeDateModule,
    MatChipsModule,
+   MatCardModule,
    MatTooltipModule,
    MatTableModule,
    MatPaginatorModule,
-   MatExpansionModule
+   MatExpansionModule,
+   MatTabsModule,
+   MatCheckbox,
+   MatCheckboxModule
 } from '@angular/material';
 
 @NgModule({
@@ -41,11 +45,15 @@ import {
       MatChipsModule,
       MatTooltipModule,
       MatTableModule,
+      MatCardModule,
       MatPaginatorModule,
-      MatExpansionModule
+      MatExpansionModule,
+      MatTabsModule,
+      MatCheckboxModule
    ],
    exports: [
       MatButtonModule,
+      MatCardModule,
       MatToolbarModule,
       MatIconModule,
       MatSidenavModule,
@@ -61,7 +69,9 @@ import {
       MatTooltipModule,
       MatTableModule,
       MatPaginatorModule,
-      MatExpansionModule
+      MatExpansionModule,
+      MatTabsModule,
+      MatCheckboxModule
    ],
    providers: [
       MatDatepickerModule,
